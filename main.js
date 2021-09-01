@@ -2,12 +2,14 @@ let first = "Uwielbiam JavaScript";
 
 let second = "Jestem świetnym programistą";
 
-function smush(x, y) {
+function myF(x, y) {
+    let one = x.length;
+    let two = y.length;
+    if (one > two) {
+        return x;
+    } else {
+        return y;
+    }
+}
 
-    let result = x + y;
-    return result
-};
-
-
-let effect = smush(first, second);
-console.log(effect);
+console.log(myF(first, second));
